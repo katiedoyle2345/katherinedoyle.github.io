@@ -44,9 +44,9 @@
                 <!-- Data Quality and Processing Section -->
                 <section>
                     <h2>Data Quality and Processing</h2>
-                   <p>The integration of Power BI visualizations with the <a href="Sales.csv" target="_blank">"Sales.csv"</a> dataset and Python analysis enriches the analysis by offering dynamic insights. Visualizations provide a multi-dimensional view of market dynamics, underscoring the importance of visual analytics in deriving actionable business intelligence.</p>
+                   <p>The integration of Power BI visualizations with the <a href="Sales.csv" target="_blank">"Sales.csv"</a> dataset and Python analysis enriches the analysis by offering dynamic insights. The visualisations provide a multi-dimensional view of market dynamics, underscoring the importance of visual analytics in deriving actionable business intelligence.</p>
 
-                    <p>Data processing and feature engineering, such as standardizing formats and handling missing values, directly impact model performance. These steps ensure the dataset is clean, uniform, and ready for analysis, crucial for building accurate and reliable predictive models.</p>
+                    <p>Data processing and feature engineering, such as standardising formats and handling missing values, directly impact model performance. These steps ensure the dataset is clean, uniform, and ready for analysis, crucial for building accurate and reliable predictive models.</p>
                 </section>
 
                 <!-- Analytics: Statistical Analysis and Machine Learning -->
@@ -61,14 +61,20 @@
                     <h3>What I did in the Python Code:</h3>
                     <pre><code>
 # Sample Python code snippet for data cleaning
-import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
-# Load and clean the dataset
-df = pd.read_csv('Sales.csv')
-df.dropna(inplace=True)  # Remove missing values
+# Calculating the correlation matrix
+correlation_matrix = cleaned_data[['Memory', 'Storage', 'SellingPrice_EUR', 'OriginalPrice_EUR', 'Rating']].corr()
+
+# Plotting the heatmap for the correlation matrix
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f")
+plt.title('Correlation Matrix of Features')
+plt.show()
                     </code></pre>
                     <p>For a detailed view of the analysis and more code snippets, see the full project documentation:
-                        <a href="URL_TO_YOUR_NOTEBOOK.html" target="_blank">Project Notebook</a>
+                        <a href="cleanedphonesalesdata.html" target="_blank">Project Notebook</a>
                     </p>
                 </section>
             </div>
