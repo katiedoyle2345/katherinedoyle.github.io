@@ -39,60 +39,41 @@
         <div id="main">
             <div class="inner">
                 <h1>Phone Sales Performance Analysis In India</h1>
-			<h4>Project Overview:</h4> This project involved performing a comprehensive analysis of phone sales in India, leveraging data cleaning techniques, Python analysis, and Power BI visualisations to gain dynamic insights into sales trends, consumer preferences, and revenue.</p>
-		<h2>Data Cleaning and Preparation</h2>
-                	<p>I utilised Python to clean and prepare the dataset for analysis. This involved standardising memory and storage columns, handling missing values, calculating discount percentages, converting currencies, and more. The objective was to ensure high data quality and consistency.</p>
-
-                <h2>Analysis and Insights</h2>
-                <p>The analysis revealed several key insights into the phone sales market in India. Through correlation matrices and machine learning models, we identified which factors most strongly influenced customer satisfaction and sales performance.</p>
-
-                <h2>Technologies Used:</h2>
-                <ul>
-                    <li>Python for data processing and analysis</li>
-                    <li>Power BI for data visualization</li>
-                    <li>Machine Learning models for predictive analysis</li>
-                </ul>
-
-                <h2>Project Outcomes</h2>
-                <p>The project significantly contributed to understanding the dynamics of the Indian phone market. It informed strategic decisions for our client, helping them to tailor their inventory and marketing efforts more effectively.</p>
-		    
-                <section>
-                    <h2>Data Quality and Processing</h2>
-                   <p>The integration of Power BI visualisations with the <strong><a href="Sales.csv" target="_blank">"Sales.csv"</a></strong> dataset and Python analysis enriches the analysis by offering dynamic insights. The visualisations provide a multi-dimensional view of market dynamics, underscoring the importance of visual analytics in deriving actionable business intelligence.</p>
-
-                    <p>Data processing and feature engineering, such as standardising formats and handling missing values, directly impact model performance. These steps ensure the dataset is clean, uniform, and ready for analysis, crucial for building accurate and reliable predictive models.</p>
-                </section>
+			<h2>Project Overview:</h2> 
+		    		<p>This project involved performing a comprehensive analysis of phone sales in India, leveraging data cleaning techniques, Python analysis, and Power BI visualisations to gain dynamic insights into sales trends, consumer preferences, and revenue.</p>
+		<h2>Technologies Used:</h2>
+		                <ul>
+		                    <li>Python for data processing and analysis</li>
+		                    <li>Power BI for data visualization</li>
+		                    <li>Machine Learning models for predictive analysis</li>
+		                </ul>
 		<section>
-                    <h2>What I did to clean the Sales Data...</h2>
-                    <p>
-			Dataset Initialization: Sales data was imported into a pandas DataFrame from a CSV file, ensuring correct parsing and readiness for manipulation.<br>
-			Data Cleanup: Column headers were standardized by removing spaces, and rows with missing values were eliminated to maintain dataset integrity for reliable analysis.<br>
-			Data Standardization: Memory and storage information were normalized to a uniform numeric format, crucial for enabling accurate quantitative comparisons.<br>
-			Feature Engineering: Additional calculations were performed to derive new columns, such as discount percentages, improving the dataset's utility for analysis.<br>
-			Currency Standardization: Prices were converted from INR to EUR for consistency, with the conversion ensuring the data aligns with the analysis's geographic focus.<br>
-			Data Pruning: Columns containing original currency values were removed post-conversion, streamlining the dataset to include only relevant data.<br>
-			Data Export: The refined dataset, now clean and processed, was exported as a new CSV file, ready for comprehensive analysis or further reporting. 
+		
+			<h2>Data Quality and Processing</h2>
+                   <p>The integration of Power BI visualisations with the <strong><a href="Sales.csv" target="_blank">"Sales.csv"</a></strong> dataset and Python analysis enriches the analysis by offering dynamic insights. The visualisations provide a multi-dimensional view of market dynamics, underscoring the importance of visual analytics in deriving actionable business intelligence.</p>
+                   <p>Data processing and feature engineering, such as standardising formats and handling missing values, directly impact model performance. These steps ensure the dataset is clean, uniform, and ready for analysis, crucial for building accurate and reliable predictive models.</p>
+                </section>
+		
+		<h2>Data Cleaning and Preparation</h2>
+                		<p>I utilised Python to clean and prepare the dataset for analysis. This involved standardising memory and storage columns, handling missing values, calculating discount percentages, converting currencies, and more. The objective was to ensure high data quality and consistency.</p>
+                   	<h2>What I did to clean the Sales Data...</h2>
+                   		 <p>
+					Dataset Initialization: Sales data was imported into a pandas DataFrame from a CSV file, ensuring correct parsing and readiness for manipulation.<br>
+					Data Cleanup: Column headers were standardized by removing spaces, and rows with missing values were eliminated to maintain dataset integrity for reliable analysis.<br>
+					Data Standardization: Memory and storage information were normalized to a uniform numeric format, crucial for enabling accurate quantitative comparisons.<br>
+					Feature Engineering: Additional calculations were performed to derive new columns, such as discount percentages, improving the dataset's utility for analysis.<br>
+					Currency Standardization: Prices were converted from INR to EUR for consistency, with the conversion ensuring the data aligns with the analysis's geographic focus.<br>
+					Data Pruning: Columns containing original currency values were removed post-conversion, streamlining the dataset to include only relevant data.<br>
+					Data Export: The refined dataset, now clean and processed, was exported as a new CSV file, ready for comprehensive analysis or further reporting.
+				</p>
 		</section>
-               
                 <section>
                     <h2>Analytics: Statistical Analysis and Machine Learning</h2>
+			
                     <p>The heatmap displays the correlation matrix for selected features, providing insights into the relationships between memory, storage, pricing, and ratings. This analysis identifies key influencers on product ratings and guides strategic decisions.</p>
 			<section>
-                    <h3>What I did in the Python Code:</h3>
-                    <pre><code>
-				# Sample Python code snippet for data cleaning
-				import seaborn as sns
-				import matplotlib.pyplot as plt
-				
-				# Calculating the correlation matrix
-				correlation_matrix = cleaned_data[['Memory', 'Storage', 'SellingPrice_EUR', 'OriginalPrice_EUR', 'Rating']].corr()
-				
-				# Plotting the heatmap for the correlation matrix
-				plt.figure(figsize=(10, 8))
-				sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f")
-				plt.title('Correlation Matrix of Features')
-				plt.show()
-                    </code></pre>
+                    <h3>Click here to see the code:<strong><a href="cleanedphonesalesdata.html" target="_blank">Project Notebook</a></strong></h3>
+                    
                     <h2>Key observations from the correlation matrix:</h2>
 
 			<p>Memory and Rating: The correlation is relatively low, suggesting that the amount of memory in a device does not strongly influence its rating.</p>
@@ -100,8 +81,25 @@
 			<p>SellingPrice_EUR and OriginalPrice_EUR: As expected, there is a very high correlation between selling price and original price, which is logical given that these two attributes are closely related.</p>
 			<p>Price and Rating: Both 'SellingPrice_EUR' and 'OriginalPrice_EUR' show low to moderate correlation with 'Rating', suggesting that while there may be some relationship between price and quality perception, it is not strongly linear.</p>
 		</section>
+		<section>
+		    <h2>Analysis and Insights</h2>
+                <p>The analysis revealed several key insights into the phone sales market in India. Through correlation matrices and machine learning models, we identified which factors most strongly influenced customer satisfaction and sales performance.</p>
+
+
+
+			
+                <h2>Project Outcomes</h2>
+                <p>The project significantly contributed to understanding the dynamics of the Indian phone market. It informed strategic decisions for our client, helping them to tailor their inventory and marketing efforts more effectively.</p>
+		    
+                <section>
+                    
+
+               
+                
+			
                     <p>Machine learning models, including Linear Regression and Gradient Boosting, have been employed to predict mobile phone ratings based on specifications and prices. The models' performance, indicated by RMSE and R^2 Score, reveals the predictive power and areas for further improvement.</p>
-               <h3>What I did in the Python Code:</h3>
+               
+		<h3>What I did in the Python Code:</h3>
                     <pre><code>
 				from sklearn.ensemble import GradientBoostingRegressor
 
@@ -119,9 +117,10 @@
 				
 				rmse_gb, r2_gb
                     </code></pre>
+		
 		</section>
-			<p>For a detailed view of the analysis and more code snippets, see the full project documentation:<strong><a href="cleanedphonesalesdata.html" target="_blank">Project Notebook</a></strong>
-                    </p>
+			<h2>For a detailed view of the analysis and more code snippets, see the full project documentation:<strong><a href="cleanedphonesalesdata.html" target="_blank">Project Notebook</a></strong>
+                    </h2>
                 
             </div>
         </div>
