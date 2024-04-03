@@ -58,34 +58,19 @@
 							This includes:<br>
    									 - Removing punctuation and numbers to reduce noise in the data.<br>
    									 - Converting all text to lowercase to maintain uniformity.<br>
-  									 - Tokenizing the text into individual words to prepare for further cleaning.<br>
+  									 - Tokenising the text into individual words to prepare for further cleaning.<br>
     									 - Removing common stopwords (e.g., "and", "the", "is") which do not contribute to distinguishing spam messages.<br>
     									 - Applying stemming to words to reduce them to their root form, thus consolidating similar forms of a word.</p>
+							<h2>3.Feature Extraction: </h2>
+							<p>We convert the preprocessed text into numerical values using the TF-IDF (Term Frequency-Inverse Document Frequency) technique. TF-IDF evaluates how important a word is to a document within a large collection of documents (corpus). It gives more weight to terms that are frequent in a document but not across documents. This step transforms text data into a format that machine learning algorithms can work with.</p>
+						
 						</div>
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
+						
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
@@ -99,9 +84,7 @@
 									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
+						
 						</div>
 					</footer>
 
