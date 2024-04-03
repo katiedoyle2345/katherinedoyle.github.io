@@ -20,11 +20,6 @@
 					<header id="header">
 						<div class="inner">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
-
 							<!-- Nav -->
 								<nav>
 									<ul>
@@ -58,7 +53,14 @@
 							<p>The project aims to develop a machine learning model capable of accurately classifying SMS messages as spam or ham (not spam). By leveraging Natural Language Processing (NLP) techniques, the model will process and analyze text data to identify patterns indicative of unsolicited messages. The objective is to enhance the filtering of spam messages, thereby improving user experience and security.</p>
 							<h2> Explanation and Rationale:</h2>
 							<p>The project follows a standard NLP pipeline, which includes data loading, text preprocessing, feature extraction, and model training.</p>
-						<p>1.Data Loading: The first step involves loading the <strong><a href="Spam_SMS.html" target="_blank">"SMS_Spam.csv"</a></strong>  dataset using pandas, a Python library for data manipulation and analysis. This step is crucial to get a preliminary look at the data and understand the structure and content of the SMS messages.</p>
+							<p>1.Data Loading: The first step involves loading the <strong><a href="Spam_SMS.html" target="_blank">"SMS_Spam.csv"</a></strong>  dataset using pandas, a Python library for data manipulation and analysis. This step is crucial to get a preliminary look at the data and understand the structure and content of the SMS messages.</p>
+							<p>2.Text Preprocessing: Since machine learning models do not understand raw text, we perform preprocessing to convert text into a more digestible format. <br>
+							This includes:<br>
+   									 - Removing punctuation and numbers to reduce noise in the data.<br>
+   									 - Converting all text to lowercase to maintain uniformity.<br>
+  									 - Tokenizing the text into individual words to prepare for further cleaning.<br>
+    									 - Removing common stopwords (e.g., "and", "the", "is") which do not contribute to distinguishing spam messages.<br>
+    									 - Applying stemming to words to reduce them to their root form, thus consolidating similar forms of a word.</p>
 						</div>
 					</div>
 
