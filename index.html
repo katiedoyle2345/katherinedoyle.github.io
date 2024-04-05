@@ -22,24 +22,24 @@
 			}
 			
 			#banner .content .row {
-				width: 80%; /* Use full width */
+				width: 100%; /* Use full width */
 			}
-			
-			#banner .content .col-6 {
-				flex-basis: 50%; /* Split the width equally */
-				display: flex; /* Use flexbox for the contents */
-				align-items: center; /* Align items vertically */
-				justify-content: center; /* Center the contents */
-			}
+
 			
 			#banner .content .col-6:first-child {
-				justify-content: flex-end; /* Align the image to the right */
-				padding-right: 2em; /* Add some padding between the image and the text */
-			}
-			
-			#banner .content .col-6:last-child {
-				justify-content: flex-start; /* Align the text to the left */
-			}
+            flex-basis: 20%; /* Now 30% of the space */
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Or center */
+            padding-right: 2em; /* Adjust as needed */
+        }
+        
+        #banner .content .col-6:last-child {
+            flex-basis: 80%; /* Now 70% of the space */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Or center */
+        }
 			
 			header {
 				text-align: left; /* Align header text to the left */
