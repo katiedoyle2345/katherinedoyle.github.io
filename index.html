@@ -9,22 +9,45 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			.profile-image {
-				width: 100%; /* Adjust the width as per your requirement */
-				height: auto; /* This will maintain the aspect ratio */
-				max-width: 350px; /* Adjust the maximum width as per your requirement */
+				width: auto; /* This will maintain the aspect ratio */
+				height: 100%; /* Adjust the height as per your requirement */
+				max-height: 200px; /* Adjust the maximum height as per your requirement */
+				border-radius: 50%; /* Optional: if you want a round image */
+			}
+			
+			#banner .content {
+				display: flex; /* Use flexbox for layout */
+				align-items: center; /* Align items vertically */
+				justify-content: space-between; /* Add space between the image and the text */
 			}
 			
 			#banner .content .row {
-				display: flex; /* Use flexbox to align items */
-				align-items: left; /* Vertically center items */
+				width: 100%; /* Use full width */
 			}
 			
 			#banner .content .col-6 {
-				flex: 6; /* Let columns take equal space */
+				flex-basis: 50%; /* Split the width equally */
+				display: flex; /* Use flexbox for the contents */
+				align-items: center; /* Align items vertically */
+				justify-content: center; /* Center the contents */
 			}
 			
-			#banner .content .col-6:nth-child(2) {
-				padding-left: 200px; /* Adjust the left padding as needed */
+			#banner .content .col-6:first-child {
+				justify-content: flex-end; /* Align the image to the right */
+				padding-right: 2em; /* Add some padding between the image and the text */
+			}
+			
+			#banner .content .col-6:last-child {
+				justify-content: flex-start; /* Align the text to the left */
+			}
+			
+			header {
+				text-align: left; /* Align header text to the left */
+			}
+			
+			header h1 {
+				margin: 0 0 1em 0; /* Adjust margins as needed */
+				font-size: 2em; /* Adjust font size as needed */
 			}
 		</style>
 	</head>
