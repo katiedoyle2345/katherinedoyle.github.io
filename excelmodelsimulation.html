@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>SMS SPAM DETECTION</title>
+		<title>Model Simulation for Airline Overbooking Strategies</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -51,24 +51,15 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>SMS Spam Detection Using Natural Language Processing</h1>
-							<h2>Aim of the Project:</h2>
-							<p>The project aims to develop a machine learning model capable of accurately classifying SMS messages as spam or ham (not spam). By leveraging Natural Language Processing (NLP) techniques, the model will process and analyze text data to identify patterns indicative of unsolicited messages. The objective is to enhance the filtering of spam messages, thereby improving user experience and security.</p>
-							<h2> Explanation and Rationale:</h2>
-							<p>The project follows a standard NLP pipeline, which includes data loading, text preprocessing, feature extraction, and model training.</p>
-							<p>1.Data Loading: The first step involves loading the <strong><a href="spam_sms.csv" target="_blank">"SMS_Spam.csv"</a></strong>  dataset using pandas, a Python library for data manipulation and analysis. This step is crucial to get a preliminary look at the data and understand the structure and content of the SMS messages.</p>
-							<p>2.Text Preprocessing: Since machine learning models do not understand raw text, we perform preprocessing to convert text into a more digestible format. <br>
-							This includes:<br>
-   									 - Removing punctuation and numbers to reduce noise in the data.<br>
-   									 - Converting all text to lowercase to maintain uniformity.<br>
-  									 - Tokenising the text into individual words to prepare for further cleaning.<br>
-    									 - Removing common stopwords (e.g., "and", "the", "is") which do not contribute to distinguishing spam messages.<br>
-    									 - Applying stemming to words to reduce them to their root form, thus consolidating similar forms of a word.</p>
-							<p>3.Feature Extraction: We convert the preprocessed text into numerical values using the TF-IDF (Term Frequency-Inverse Document Frequency) technique. TF-IDF evaluates how important a word is to a document within a large collection of documents (corpus). It gives more weight to terms that are frequent in a document but not across documents. This step transforms text data into a format that machine learning algorithms can work with.</p>
-							<p>4.Model Training: With the features ready, we train a Naive Bayes classifier, a popular algorithm for text classification due to its simplicity and effectiveness. It uses probabilities to make predictions, which is particularly suitable for spam detection as it can manage the independence between the words after the TF-IDF transformation.</p>
-							<p>5.Model Evaluation: After training, we evaluate the model's performance on a separate test set to determine its accuracy and the precision and recall of its predictions. This step is critical to assess the model’s practicality in effectively filtering spam messages without misclassifying legitimate messages (ham).</p>
-							<p>6.Application: The final product is a spam detection model that can be integrated into messaging platforms to automatically filter out spam, thus protecting users from unwanted messages and potential phishing attempts.</p>
-						<p>By addressing a common and impactful problem, this project not only demonstrates the application of NLP in a practical scenario but also showcases the ability to harness machine learning for improving digital communication security. </p>
+							<h1>Model Simulation for Airline Overbooking Strategies</h1>
+							<p>This portfolio entry showcases a comprehensive simulation model developed to analyze overbooking strategies within the airline industry. Overbooking is a common practice among airlines to mitigate the impact of no-show passengers, but it must be balanced against the risk of denying boarding to passengers when more show up than there are seats available.</p>
+							<h2> Techniques Used:</h2>
+							<p>Data Analysis: The "Flight Data" sheet shows initial data analysis to better understand the flight operations, including the collection and cleansing of flight-related data.</p>
+							<p>Probabilistic Modeling: In "Model 1 (1 Overbooking)" and "Model 2 (3 Overbookings)", probabilistic models were constructed to simulate different scenarios of overbooking. The models utilise historical data to estimate probabilities of no-shows and to calculate optimal overbooking levels.</p>
+							<p>Scenario Analysis: By comparing different models with varying degrees of overbooking, a scenario analysis was conducted to observe the outcomes under different conditions and to identify the overbooking strategy that maximises revenue while minimising the risk and cost of denied boarding.</p>
+							<p>Revenue Management: The simulation addresses revenue management by forecasting potential revenue gains from overbooking against the costs associated with compensating bumped passengers.</p>
+						<p></p>
+						
 						<p>Here is the link to the<strong><a href="spam_txt.html" target="_blank">"Python File"</a></strong></p>
 			
 						 <div class="image-container">
