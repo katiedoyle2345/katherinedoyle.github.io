@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Analyzing IoT Network Traffic for Anomaly Detection</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Aboutme.html">About Me</a></li>
+						<li><a href="portfolio.html">Projects</a></li>
+						<li><a href="mediapage.html">Media Page</a></li>
+					</ul>
+				</nav>
+				
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>IoT Network Traffic Analysis for Anomaly Detection</h1>
+							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+							<h2>Objective:</h2>
+								<p>My project focused on analysing network traffic data from IoT devices with the goal of detecting anomalies and potential threats. The data was processed using advanced SQL techniques to clean, balance, and enhance the dataset, which laid the groundwork for building a robust Intrusion Detection System (IDS). </p>
+							
+							<h2>Data Preprocessing and Analysis: </h2>
+								<p>Data Cleaning: <br>
+									- Filling missing packet and byte information with zeroes. <br>
+									- Checking for and handling any null values in key fields. <br>
+									- Deleting duplicate entries to maintain dataset accuracy.</p>	
+								<p>After cleaning, I moved to <strong>Data Balancing</strong> to counteract the class imbalance that often plagues anomaly detection tasks. This was achieved by sampling equal instances of 'Malicious' and 'Benign' labels, creating a balanced working dataset for reliable model training.</p>
+								<p><strong>Feature Engineering</strong> was a creative phase where I introduced new attributes like a boolean column to flag common IoT ports. Additionally, I calculated the average bytes per packet to understand the traffic patterns more effectively. These engineered features were critical in identifying unusual traffic that could signify security risks.</p>
+								<p>For <strong>Feature Scaling, </strong>I performed a min-max normalization on orig_ip_bytes, a key step for models that are sensitive to the scale of the data.</p>
+								<p><strong>Categorical Variables Encoding</strong> was applied to the protocol field to transform textual data into a numeric format, preparing the dataset for algorithmic processing.</p>
+								<p>Next, I divided the dataset into training and testing subsets during the <strong>Data Partitioning Stage</strong> . This is an essential step for model validation and to avoid overfitting.</p>
+								<p>Here is the link to the<strong><a href="sqlproject/IoTSQLfile.sql" target="_blank">"SQL File"</a></strong> & the<strong><a href="sqlproject/IoTNet24 Dataset for IDS.csv" target="_blank">" CSV File"</a> </p>
+	
+						<h2>Analytical Insights:</h2>
+						<p> - Data Aggregation: Leveraged powerful aggregation functions like COUNT(), SUM(), and AVG() to summarise and analyze data, providing insights into the distribution of traffic and identifying potential imbalances.<br>
+							- Conditional Logic: Utilised CASE statements to encode categorical variables, transforming textual protocol information into numerical codes suitable for analysis.<br>
+							- Data Definition & Manipulation: Employed ALTER TABLE to enhance the dataset structure by adding new columns, and UPDATE commands to populate these columns with derived data for feature enrichment.<br>		
+							- Window Functions: Deployed advanced window functions such as LEAD(), LAG(), ROW_NUMBER(), and RANK() to detect anomalies and understand sequential traffic patterns, which are vital in predicting network intrusions.<br>
+							- Random Sampling: Implemented the RANDOM() function in conjunction with CREATE TEMP TABLE statements to partition the dataset into training and testing subsets, which is crucial for the validation and testing of machine learning models.<br>
+							- Data Normalisation: Conducted a basic form of feature scaling by applying min-max normalization directly within SQL, making the numerical features ready for algorithms that are sensitive to feature magnitude.	</p>					<p><stromg>True Negatives (TN):</stromg>The model correctly identified 965 non-spam messages. This is a high number and suggests that the model is very effective at identifying the majority of genuine messages.</p>	
+							
+							<h2> Analysis Overview</h2>
+								<p> Traffic Analysis: We assessed traffic volume and behavior to identify anomalies and discern trends.<br>
+									Protocol and Port Analysis: We performed a granular inspection of protocol usage and port activities, unearthing potential areas of risk.<br>
+									Port-Specific Analysis: We evaluated traffic patterns per port, highlighting those exhibiting irregular behaviors.
+						</p>
+
+							<div class="image-container">
+
+								<img src="images/ROCcurve.png" alt="" /></div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
