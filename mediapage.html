@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Media Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Aboutme.html">About Me</a></li>
+						<li><a href="portfolio.html">Projects</a></li>
+						<li><a href="mediapage.html">Media Page</a></li>
+					</ul>
+				</nav>
+				
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Media Page</h1>
+                                    
+                            <h2>Podcasts on Big Data and Analytics</h2>
+                                
+                                    <!-- Podcast Embeds -->
+                                    <h3>Gresham College Lectures:An insightful podcast episode exploring the frontiers of Business Analytics.</h3>
+                                    <!-- Replace 'SPOTIFY_EMBED_LINK_HERE' with the actual Spotify embed link -->
+                                    <iframe src="https://open.spotify.com/episode/2mRqr5DjKggyYYyFeWROJa?si=P-_Ae81pS4234iwIVoXKxg" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                
+                                    <h3>Big Data, Big Analytics: Emerging Business Intelligence: A show dedicated to the transformative power of big data in the business world.</h3>
+                                    <!-- Replace 'SPOTIFY_EMBED_LINK_HERE' with the actual Spotify embed link -->
+                                    <iframe src="https://open.spotify.com/show/6Ea1ljLqe1Y6tCIci2m2GJ?si=X41vh67MTbeCt2gk5lQLow" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                
+                                    <h3>Women in Big Data:This episode highlights the contributions and perspectives of women in the field of big data and analytics. </h3>
+                                    <!-- Replace 'SPOTIFY_EMBED_LINK_HERE' with the actual Spotify embed link -->
+                                    <iframe src="https://open.spotify.com/episode/23dQhHmq57ghzF3hHBOajk?si=nF_7rgeRS-2zhqvEBM8Z7Q" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                
+                                </section>
+
+	
+						<h2>Analytical Insights:</h2>
+						<p>Throughout the analysis of IoT network traffic, a multitude of SQL techniques was employed to sculpt raw data into actionable intelligence:</p>
+					
+								<p>Data Aggregation: Leveraged powerful aggregation functions like <code>COUNT()</code>, <code>SUM()</code>, and <code>AVG()</code> to summarize and analyze data, providing insights into the distribution of traffic and identifying potential imbalances.</li>
+								<p>Conditional Logic: Utilized <code>CASE</code> statements to encode categorical variables, transforming textual protocol information into numerical codes suitable for analysis.</li>
+								<p>Data Definition & Manipulation: Employed <code>ALTER TABLE</code> to enhance the dataset structure by adding new columns, and <code>UPDATE</code> commands to populate these columns with derived data for feature enrichment.</li>
+								<p>Window Functions: Deployed advanced window functions such as <code>LEAD()</code>, <code>LAG()</code>, <code>ROW_NUMBER()</code>, and <code>RANK()</code> to detect anomalies and understand sequential traffic patterns, which are vital in predicting network intrusions.</li>
+								<p>Random Sampling: Implemented the <code>RANDOM()</code> function in conjunction with <code>CREATE TEMP TABLE</code> statements to partition the dataset into training and testing subsets, which is crucial for the validation and testing of machine learning models.</li>
+								<p>Data Normalization: Conducted a basic form of feature scaling by applying min-max normalization directly within SQL, making the numerical features ready for algorithms that are sensitive to feature magnitude.</li>
+							
+								<p>These techniques paved the way for <strong>analytical insights</strong> that cut to the core of network security:</p>
+							
+								<p>The <strong>Anomaly Detection</strong> process unearthed irregular connection states that deviated from the norm, indicating potential security threats. By identifying the most frequently targeted ports and protocol usage, the analysis shed light on common attack vectors.</p>
+								<p>A <strong>Detailed Anomaly Report</strong> underscored the ports and protocols associated with the highest byte transfers, suggesting potential points of exploitation.</p>
+								<p><strong>KPI Metrics</strong> computation for network traffic granted a baseline understanding of network behavior under normal conditions.</p>
+								<p>Through <strong>Statistical Analysis</strong>, descriptive statistics and correlations were computed to seize the central tendencies and relationships within the traffic data.</p>
+								<p>To bolster future <strong>Visualization</strong>, data subsets were prepared to facilitate the creation of heat maps in Python, enabling a graphical representation of protocol usage and traffic counts across different ports.</p>
+						
+						<p>The culmination of these efforts resulted in a refined dataset, revealing the intricate tapestry of network interactions and security implications within. Such diligence not only enhances the cybersecurity posture but also equips stakeholders with the knowledge to preemptively fortify defenses against cyber threats.</p>
+													<h2> Analysis Overview</h2>
+								<p> Traffic Analysis: We assessed traffic volume and behavior to identify anomalies and discern trends.<br>
+									Protocol and Port Analysis: We performed a granular inspection of protocol usage and port activities, unearthing potential areas of risk.<br>
+									Port-Specific Analysis: We evaluated traffic patterns per port, highlighting those exhibiting irregular behaviors.
+						</p>
+						<p>Here is the link to the<strong><a href="sqlproject/SqlvisualisationsIoT.ipynb" target="_blank">"Python Heat Matrix Visualisation"</a></p>
+							<div class="image-container">
+
+								<img src="images/heatmapsqliot.png" alt="" />
+							</div>
+					</div>
+				</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
