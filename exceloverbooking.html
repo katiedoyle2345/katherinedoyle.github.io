@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ABOUT ME</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style>
+			    .image.main {
+			        display: flex;
+			        justify-content: center;
+			    }
+			    .image.main img {
+			        width: 700px; 
+			        height: 550px;  
+			    }
+		</style>
+	</head>
+	
+		<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<div class="inner">
+					        <!-- Nav -->
+					                <nav>
+					                    <ul>
+					                        <li><a href="#menu">Menu</a></li>
+					                    </ul>
+					                </nav>
+					            </div>
+					        </header>
+					
+				 <!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Aboutme.html">About Me</a></li>
+                        <li><a href="portfolio.html">Projects</a></li>
+                        <li><a href="mediapage.html">Media Page</a></li>
+                        <li><a href="blogpage.html">Blog</a></li>
+                        <li><a href="moreaboutme.html">More About Me...</a></li>
+                        <li><a href="contactme.html">Contact Me</a></li>
+
+                    </ul>
+        </nav>
+
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>FLight Over-Booking Analysis Project</h1>
+							<p>For this project, I used my Data Analytics skills to evaluate flight data for a fictional carrier called 'Green Airways'.<br>
+                                Green Airways operates 3 daily flights from Dublin to London, each with a capacity of 100 passengers. <br>
+                                The flight data for 1 year was inspected to optimize for profit while minimising the cost of compensating "bumped" passengers. <br>
+                                Overbooking is a common practice to compensate for "no-shows", but it comes with its own risks and costs.</p>
+                                
+                                <h2>Data Processing:Part A </h2>
+                                <p>Input data was properly formatted and did not require any data cleaning or processing prior to data analysis</p>
+                                <h2>Data Processing:Part B </h2>
+                                <p>The goal of this part of the project was to create a "Monte-Carlo" simulation to identify strategies for overbooking passengers on the Dublin to London flights based on 1 and 3 overbooked passengers.  The simulation took into account different demand and 'bump' costs for different times of the day 11am, 3pm and 7pm.</p> 
+                    
+                                <p>The Monte Carlo Simulation, I used various Excel functions:<br>
+                                - Rand to create 1092 random probabilities.<br>
+                                - norm.inv to calculate the inverse of the normal cumulative distribution for the specified mean and standard deviation calculated in part A, to simulate 'Demand' and 'No Shows'<br>
+                                - Average, Median, Maximum and Minimum to calculate these values for the simulated data.</p>
+							
+                            <h5>Click here to see my <strong><a href="resume.html" target="_blank">Resume</a></strong></h5>
+						</div>
+						
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+
+	</body>
+</html>
