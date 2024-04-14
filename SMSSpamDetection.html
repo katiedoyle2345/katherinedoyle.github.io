@@ -73,7 +73,9 @@
    									 - Converting all text to lowercase to maintain uniformity.<br>
   									 - Tokenising the text into individual words to prepare for further cleaning.<br>
     									 - Removing common stopwords (e.g., "and", "the", "is") which do not contribute to distinguishing spam messages.<br>
-    									 - Applying stemming to words to reduce them to their root form, thus consolidating similar forms of a word.</p>
+    									 - Applying stemming to words to reduce them to their root form, thus consolidating similar forms of a word.<br>
+										- Labels are converted from categorical ('ham', 'spam') to a binary format (0, 1). The text data is vectorized, converting it from raw text to a format (numerical feature vectors) that can be used in machine learning models.
+										</p>
 							<p>3.Feature Extraction: We convert the preprocessed text into numerical values using the TF-IDF (Term Frequency-Inverse Document Frequency) technique. TF-IDF evaluates how important a word is to a document within a large collection of documents (corpus). It gives more weight to terms that are frequent in a document but not across documents. This step transforms text data into a format that machine learning algorithms can work with.</p>
 							<p>4.Model Training: With the features ready, we train a Naive Bayes classifier, a popular algorithm for text classification due to its simplicity and effectiveness. It uses probabilities to make predictions, which is particularly suitable for spam detection as it can manage the independence between the words after the TF-IDF transformation.</p>
 							<p>5.Model Evaluation: After training, we evaluate the model's performance on a separate test set to determine its accuracy and the precision and recall of its predictions. This step is critical to assess the model’s practicality in effectively filtering spam messages without misclassifying legitimate messages (ham).</p>
