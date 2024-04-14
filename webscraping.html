@@ -58,29 +58,23 @@
 						</ul>
 					</nav>
 
-				<!-- Main -->
-                            <html lang="en">
-                                <head>
-                                    <meta charset="UTF-8">
-                                    <title>News Sentiment Analysis</title>
-                                </head>
                                 <body>
                                     <h1>Daily News Sentiment Analysis</h1>
                                     <div id="news"></div>
-                                    <script>
-                                        fetch('headlines.json')
-                                            .then(response => response.json())
-                                            .then(data => {
-                                                const newsContainer = document.getElementById('news');
-                                                data.forEach(item => {
-                                                    const p = document.createElement('p');
-                                                    p.textContent = `${item.headline} - Sentiment: ${item.sentiment}`;
-                                                    newsContainer.appendChild(p);
+                                        <script>
+                                            fetch('headlines.json')
+                                                .then(response => response.json())
+                                                .then(data => {
+                                                    const newsContainer = document.getElementById('news');
+                                                    data.forEach(item => {
+                                                        const p = document.createElement('p');
+                                                        p.textContent = `${item.headline} - Sentiment: ${item.sentiment}`;
+                                                        newsContainer.appendChild(p);
+                                                    });
                                                 });
-                                            });
-                                    </script>
+                                        </script>
                                 </body>
-                                </html>
+                            
 							
 
 			</div>
