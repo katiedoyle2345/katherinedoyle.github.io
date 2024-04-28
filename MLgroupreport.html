@@ -28,15 +28,15 @@
         <!-- Menu -->
         <nav id="menu">
             <h2>Menu</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Aboutme.html">About Me</a></li>
-                <li><a href="portfolio.html">Projects</a></li>
-                <li><a href="mediapage.html">Media Page</a></li>
-                <li><a href="blogpage.html">Blog Page</a></li>
-                <li><a href="moreaboutme.html">More About Me</a></li>
-                <li><a href="contactme.html">Contact Me</a></li>
-            </ul>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Aboutme.html">About Me</a></li>
+                        <li><a href="portfolio.html">Projects</a></li>
+                        <li><a href="mediapage.html">Media Page</a></li>
+                        <li><a href="blogpage.html">Blog Page</a></li>
+                        <li><a href="moreaboutme.html">More About Me</a></li>
+                        <li><a href="contactme.html">Contact Me</a></li>
+                    </ul>
         </nav>
 
         <!-- Main -->
@@ -47,17 +47,17 @@
                 <section>
                     <h2>Introduction</h2>
                     <p>The landscape of the retail sector is constantly evolving. Within the industry, a persistent challenge revolves around efforts to enhance demand forecasting. Demand forecasting is the process of leveraging tools to estimate the future demand for products. The goal of demand forecasting is to help businesses make data-driven decisions for their business strategy, particularly with inventory management and production planning. The complexities of understanding and identifying customer preferences and seamlessly delivering personalised interactions pose a challenging task for retailers. Finding the right balance is difficult to achieve, as traditional methods can hinder their efforts to understand the evolution of consumer behaviour, particularly as the world becomes more digital. The emergence of machine learning has been a pivotal force in how businesses manage their inventory levels and enhance their customer journeys seamlessly through various channels. This report will analyse the applications of machine learning and how it contributes to improving efficiency and solving problems faced by businesses in the retail sector with specific focus how it helps to improve demand forecasting.</p>
-                	<img src="pic1foress.jpg" alt="demandforcastdiagram">
+                	<span class="image main"><img src="images/pic1foress.png"></span>
 					<p>Throughout the report, we will build a case around how supervised machine learning can help businesses with demand forecasting. Firstly, we will present relevant data cleaning and feature engineering methods, and their relevance will be justified. From these methods, we can recommend what tools and software should be used by the retail sector to optimise demand forecasting. The Random Forest algorithm will be presented and put into context for retailers, with the advantages and limitations being outlined. Our results will be analysed, bringing us to our conclusion with our findings and propose actionable recommendations.</p>
 				</section>
 
                 <section>
                     <h2>Data Cleaning and Feature Engineering Methods</h2>
                     <p>Retailers will have large quantities of data that can be complex to analyse. There are values within a dataset that can be considered dirty. These can be missing values, typos, or duplicates (Chu et al, 2016). Cleaning this data is vital to improving the raw quality and accuracy of the data. Scalability is another challenge to manage. As datasets grow, data cleaning becomes trickier, and different methods must be used. Big data can now be implemented at low costs to collect data from different platforms such as social media, e-commerce sites, applications etc (Ren et al, 2019). </p>
-                    <img src="path_to_data_cleaning_image.jpg" alt="Data Cleaning Diagram">
                 	<p>There are several methods for cleaning data. Removing missing values and outliers are necessary to improve data quality and accuracy. Duplicated data can distort the data and have a biased outcome. Outlier removal can be handled by using standardisation of data through z-score analysis. This requires important values such as mean and standard deviation. These are to keep data values within a reasonable range, which helps to improve the accuracy of customer related models and can then be utilised for predictive analytics. Standardising customer information to ensure all data entries are consistent. The information can be personal information like name, email, phone number, address, etc. This enables more presentable data, which is an easy task to do as some variables in the data can have dependencies and pairings (Winkler, 2003).</p>
-					<img src="path_to_data_cleaning_image.jpg" alt="Data Cleaning Diagram">
-					<p>Different methods can be used to eliminate features, whether they are redundant or simply irrelevant (Khalid et al, 2014). Creating new columns in a dataset that represent past sales targets can be used to identify trends in demand. These are called lag features. A lag feature for sales in the past week can be useful in finding patterns of recent sales patterns. Smoothing out datasets is crucial. Rolling statistics can help with this. This involves calculation values such as standard deviation, mean and median over a rolling period. This can help identify seasonal trends with sales. The rolling mean of a monthly period helps smooth over fluctuations, for example.</p>
+					<span class="image main"><img src="images/pic3foress.png"></span>
+					
+                    <p>Different methods can be used to eliminate features, whether they are redundant or simply irrelevant (Khalid et al, 2014). Creating new columns in a dataset that represent past sales targets can be used to identify trends in demand. These are called lag features. A lag feature for sales in the past week can be useful in finding patterns of recent sales patterns. Smoothing out datasets is crucial. Rolling statistics can help with this. This involves calculation values such as standard deviation, mean and median over a rolling period. This can help identify seasonal trends with sales. The rolling mean of a monthly period helps smooth over fluctuations, for example.</p>
 				</section>
 
                 <section>
